@@ -17,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/random-photo', \App\Http\Controllers\API\RandomPhotoController::class);
+Route::post('/decision/{id}', \App\Http\Controllers\API\PhotoDecisionController::class);
