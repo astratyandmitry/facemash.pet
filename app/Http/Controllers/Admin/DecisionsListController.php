@@ -10,7 +10,7 @@ class DecisionsListController extends Controller
 {
     public function __invoke(): View
     {
-        $decisions = Decision::query()->with('photo')->paginate(5);
+        $decisions = Decision::query()->with('photo')->paginate(20);
 
         return view('admin.decisions', [
             'decisions' => $decisions,
