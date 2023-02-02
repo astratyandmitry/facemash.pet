@@ -16,7 +16,7 @@ import PhotoDecision from "./components/PhotoDecision.vue";
 
 <style lang="postcss" scoped>
 .app {
-    @apply min-h-screen w-full bg-gradient-to-br from-gray-800 to-gray-900 py-8 px-4 flex items-center justify-center;
+    @apply  antialiased min-h-screen w-full bg-gradient-to-br from-gray-800 to-gray-900 py-8 px-4 flex items-center justify-center;
 }
 
 main {
